@@ -86,7 +86,7 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
-    color: #7f7f90;
+    color: rgba(var(--color-primary-rgb), 0.7);
     text-transform: uppercase;
     font-family: var(--font-default);
   }
@@ -635,7 +635,7 @@
     padding: 50px 40px;
     box-shadow: 0px 10px 50px rgba(255, 255, 255, 0.15);
     border-radius: 10px;
-    /* background-color: var(--color-box-background); */
+    background-color: rgba(var(--color-background-rgb), 0.3);
     transition: all 0.3s ease-out;
     height: 100%;
   }
@@ -660,7 +660,7 @@
   }
   .about .icon-box p {
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 16px;
   }
   .about .icon-box:hover i {
     background-color: var(--color-primary);
@@ -706,6 +706,7 @@
 
   .elegirnos {
     padding: 110px 0;
+    background-color: rgba(var(--color-background-rgb), 0.3);
   }
   .elegirnos #carouselTeam {
     overflow: hidden;
@@ -790,11 +791,17 @@
 --------------------------------------------------------------*/
 /* Blog Section - Blog Page
 ------------------------------*/
+
+.blog {
+  background-color: rgba(var(--color-background-rgb), 0.3);
+}
+
 .blog .posts-list article {
     position: relative;
     overflow: hidden;
     border: none;
     box-shadow: 0 4px 16px rgba(var(--color-default-rgb), 0.1);
+    background-color: rgba(var(--color-background-rgb), 0.5);
     padding: 30px;
     border-radius: 10px;
     height: 100%;
@@ -1182,7 +1189,7 @@
     border-radius: 10px;
     transition: 0.5s;
     margin-top: 0;
-    border: 1px solid rgba(var(--color-secondary-rgb), 0.2);
+    border: 1px solid rgba(var(--color-secondary-rgb), 0.5);
     color: var(--color-inverse);
   }
   .footer .cta-btn i {
@@ -1199,9 +1206,9 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 1px solid rgba(var(--color-secondary-rgb), 0.2);
+    border: 1px solid rgba(var(--color-secondary-rgb), 0.5);
     font-size: 16px;
-    color: rgba(var(--color-secondary-rgb), 0.2);
+    color: rgba(var(--color-secondary-rgb), 0.5);
     margin-right: 10px;
     transition: 0.3s;
   }
